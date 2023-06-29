@@ -1,3 +1,5 @@
+# NOTE TO MYSELF: WHEN UPDATING TO A NEW VERSION OF BLENDER, UPDATE JUST LINES 11, 28, 29 & 30.
+
 # Thank you OdinGPT for the humorous commenting
 
 # Lo and behold, this tome holds knowledge of the add-on, such as its name, version, and the hand which wrought it.
@@ -6,7 +8,7 @@ bl_info = {
     "description": "Hot-swap between two themes",
     "author": "Dalibor-P",
     "version": (1, 0),
-    "blender": (3, 5, 0),
+    "blender": (3, 6, 0),
     "location": "Window > Theme Swap",
     "category": "Interface",
 }
@@ -23,9 +25,9 @@ available_themes = []
 # This rite summons the available themes from various directories, and stores a list of their paths.
 def load_themes():
     # Behold, the paths to the directories which contain these themes.
-    preset_path = ".\\3.5\\scripts\\presets\\interface_theme\\"
-    addon_path = ".\\3.5\\scripts\\addons\\presets\\interface_theme\\"
-    user_path = os.path.expandvars("%USERPROFILE%\\AppData\\Roaming\\Blender Foundation\\Blender\\3.5\\scripts\\presets\\interface_theme\\")
+    preset_path = ".\\3.6\\scripts\\presets\\interface_theme\\"
+    addon_path = ".\\3.6\\scripts\\addons\\presets\\interface_theme\\"
+    user_path = os.path.expandvars("%USERPROFILE%\\AppData\\Roaming\\Blender Foundation\\Blender\\3.6\\scripts\\presets\\interface_theme\\")
 
     # We shall traverse each of these directories, adding the paths of their contents to the list of available themes.
     for (dirpath, dirnames, filenames) in os.walk(preset_path):
